@@ -1,2 +1,2 @@
-# boot-camp-alura
+# bootcamp
 Metodo de ensino
