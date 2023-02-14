@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+        <head>
+            <title>CFB Cursos - JavaScript</title>
+            <meta charset="utf-8"/>
+
+            <script>
+
+
+            var nota=prompt("Digite sua nota");
+            var res;
+
+            if(nota>10) {
+                res="Dados Incorretos."
+            } else if(nota>=7){
+                if(nota >=9) {
+                    res="Aprovado com Maestria!";
+                } else {
+                    res="Aprovado com nota normal."
+                }
+            } else if(nota >=4) {
+                res="Recuperação";
+            } else if(nota>=2) {
+                res="Reprovado";
+            } else if(nota>=0) {
+                res="Reprovado com Força!"
+            }
+
+            document.write(res);
+        
+
+            </script>
+
+        </head>
+        <body>
+
+
+        </body>
+    </html>
