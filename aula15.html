@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+        <head>
+            <title>CFB Cursos - JavaScript</title>
+            <meta charset="utf-8"/>
+
+            <script>
+            //indexOf - Busca elemento no array e retorna sua posição
+            //sort - Faz a ordenação do array
+            //reverse - Faz a impressão do array de forma inversa
+            //join - Junta tudo numa variavel só e os separa por virgula
+            //lenght - Retorna o tamanho do array
+            
+            var times=[], times2=[], times3=[], pos;
+
+
+            times2.push("Flamengo");
+            times2.push("Vasco");
+            times2.push("Cruzeiro");
+            times2.push("Internacional");
+            times2.push("Fluminense");
+            times2.push("São Paulo");
+            times2.push("Atlético MG");
+            times2.push("Grêmio");
+            
+            times3.push("América MG");
+            times3.push("Palmeiras");
+            times3.push("Bragantino");
+            times3.push("Corinthians");
+            times3.push("Botafogo");
+            times3.push("Coritiba");
+            times3.push("Cuiabá");
+            times3.push("Atlético PR");
+
+            times=times2.concat(times3);
+
+
+            times.sort();
+            times.reverse();
+            document.write(times+"<br>");
+
+            pos=times.indexOf("Flamengo");
+
+            if(pos < 0){            
+                document.write("Time não está na lista<br>");
+            }
+            else{
+                document.write("Time está na lista, Posição: "+pos + "<br>");
+            }
+
+            document.write("Tamanho da Segunda Lista:" + times2.length + "<br>");
+            document.write("Tamanho da Terceira Lista:" + times3.length + "<br>");
+            document.write("Tamanho da Lista ao todo: " + times.length + "<br>");
+
+
+
+
+            </script>
+
+        </head>
+        <body>
+
+
+        </body>
+    </html>
